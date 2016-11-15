@@ -1,4 +1,6 @@
 <h2>Article show</h2>
+<%= link_to "Back to Article listing", articles_path %>
+
 <p>
     Title: <%= @article.title %>
     
@@ -6,3 +8,4 @@
 <p>
     Description: <%= @article.description %>
 </p>
+<%= link_to 'Edit this Article', edit_article_path(@article) %>
