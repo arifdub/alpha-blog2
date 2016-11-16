@@ -1,4 +1,7 @@
-  <% if @article.errors.any? %>
+
+  <div class= "row">
+      
+
     <h3>There are following errors :</h3>
     
         <% @article.errors.full_messages.each do |msg| %>
@@ -7,7 +10,7 @@
         </ul>
         <% end %>
     <% end %>
-
+  </div>
 <div class="row">
     <div class="col-sm-12">
         
